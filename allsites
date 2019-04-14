@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Gallery page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+<style>
+body
+{
+  background-image: url("ocean.jpg");
+  background-position: center;
+  background-repeat:repeat-y;
+
+
+}
+h1
+{
+  text-align: center;
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+}
+li
+{
+  display: inline;
+  float:left;
+}
+</style>
+  <body>
+
+    <ul>
+      <li>  <a  href="gohome.html">Homepage</a></li>
+      <li>  <a class="activelink" href="gallery.html">Gallery</a></li>
+        <li>  <a href="detail.html">Detail</a></li>
+      <li>  <a  href="ourcontacts.html">Contact us</a></li>
+      <li>  <a  href="hobbies.html">Hobbies </a></li>
+    </ul><br><br><br><br>
+
+
+          <h1>Photography is an art.<br>Art maybe be learned or inborn.<br>All we can do is appreciate it</h1><hr>
+
+        <!--  <a href="gohome.html">  <img src="car1.jpg" width="150" height="150">Homepage</a>
+          <a href="ourcontacts.html">  <img src="car2.jpg" width="150" height="150">Contact </a>
+          <a href="hobbies.html">  <img src="car3.jpg" width="150" height="150">Hobbies</a>
+          <br>
+    <!--<p1><a href="gohome.html">Homepage</a></p1>
+    <p3><a href="ourcontacts.html">Contact us</a></p3>
+    <p4><a href="hobbies.html">Hobbies</a></p4><br><br>-->
+
+ <a href=gohome.html" ><img src="mimi.jpg" alt="Tree" width="250" height="300" align="middle" hspace="20" border=5></a>
+   <img src="meme.jpg" alt="Hill" width="250" height="300" align="middle" hspace="20" border=5>
+    <img src="mama.jpg" alt="Maldive island" width="250" height="300" align="middle" hspace="20" border=5>
+     <img src="asmt.jpg" alt="Moon" width="250" height="300" align="middle" hspace="20" border=5>
+     <img src="mac3.jpg" alt="Railway" width="250" height="300" align="middle" hspace="20" border=5>
+     <img src="mac4.jpg" alt="Bridge" width="250" height="300" align="middle" hspace="20" border=5>
+      <img src="bench.jpg" alt="Bench" width="250" height="300" align="middle" hspace="20" border=5>
+      <img src="mac6.jpg" alt="Bridge" width="250" height="300" align="middle" hspace="20" border=5>
+<br><br>
+
+
+  </body>
+  </html>

@@ -1,0 +1,31 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Welcome</title>
+	<link rel="stylesheet" href="welcomestyles.css">
+</head>
+<body>
+	<div class="heading">
+		<span class="title1" style="text-align: center; font-size: 30px;">LET'S TOUR</span>
+		<span class="title2" style="text-align: center; font-size: 20px;>For those who love travelling...</span>
+		<button class="register"><a href="#modal" class="registerLink">JOIN US NOW</a></button>
+	</div>
+
+	<div class="modal_container" id="modal">
+		<div class="modal">
+			<a href="#" class="close">X</a>
+			<span class="modal_heading">ENTER YOUR DETAILS</span>
+  			<form action="server/newuser.php" method="POST">		
+  			<input type="">		
+					<input type="text" name="uname" placeholder="Username"><br>
+						<input type="password" name="pword" placeholder="Password"><br>
+							<input type="submit" class="btnregister" value="REGISTER"><br>
+			</form>
+			<a href="modal.html" class="signin">Have an account already?</a><br>
+			
+		</div>
+	</div>
+</body>
+</html>

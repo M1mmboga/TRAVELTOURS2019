@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Destinations Login</title>
+	<link rel="stylesheet" href="loginstyles.css">
+</head>
+<body>
+	<div class="login-box">
+		<img src="avatar.png" class="avatar">
+  			<form name="frm">				
+			<p>Username</p>
+			<input type="text" name="username" placeholder="Username" required>
+			<p>Password</p>
+			<input type="password" name="password" placeholder="Enter password" required>
+			<input type="submit" name="submit" value="Login" onclick="val();">
+		</form>
+	</div>
+
+	<script>
+  function val() 
+{
+	
+if(frm.username.value=="admin" && frm.password.value=="admin")
+{
+  alert ("Login success");
+  window.open("theadmin.html");
+  frm.name.focus();
+  return false;
+}	
+else if(frm.username.value==frm.password.value)
+{
+  alert ("Login success");
+  window.open("newhome.html");
+  frm.name.focus();
+  return false;
+}
+
+if(reg.test(frm.name.value) == false)
+{
+  alert ('Invalid login ');
+  frm.name.focus();
+  return false;
+}
+echo ("true");
+    return true;
+    }
+  </script>
+
+
+
+
+</body>
+</html>
