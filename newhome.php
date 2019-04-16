@@ -283,7 +283,7 @@ width:50%;
  
 </div>
 <hr>
-<h1 class="dream"><i><?php echo $_SESSION['username']; ?>, Travelling<br> It leaves you speechless<br> Then turns you into a<br> STORYTELLER!</i><br></h1><hr>
+<h1 class="dream"><i> Travelling<br> It leaves you speechless<br> Then turns you into a<br> STORYTELLER!</i><br></h1><hr>
 <h2>EXPLORE</h2>
 <button class="accordion">OUR MISSION</button>
 <div class="panel">
