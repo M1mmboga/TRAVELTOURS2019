@@ -76,7 +76,12 @@ window.onclick = function(e) {
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-    background-color: red;
+    background-color: gold;
+}
+
+.navbar a:active
+{
+  background-color: gold;
 }
 
 .dropdown-content {
@@ -141,7 +146,7 @@ h1,h2
 }
 
 .active, .accordion:hover {
-    background-color: red; 
+    background-color: gold; 
 }
 
 .panel {
@@ -273,16 +278,13 @@ width:50%;
 <body id="mainbody">
 
 <div class="navbar">
-  <h1 style="float:left; color:white; text-align: top;
-    padding: 0;
-    text-decoration: none;display: block;
-">Destinations Kenya</h1>
-  <a href="contacts.html">Contact us</a>
-  <a href="allsites.html">Destinations in Kenya</a>
-  <a href="newhome.html">Home</a>
+  <h1 style="float:left; color:white; text-align: top;padding: 0;text-decoration: none;display: block;">Destinations Kenya</h1>
+  <a href="contacts.php">Contact us</a>
+  <a href="allsites.php">Destinations in Kenya</a>
+  <a href="newhome.php">Home</a>
+  <a href="#"> Hello,  <?php echo $_SESSION['username']; ?></a>
  
 </div>
-<hr>
 <h1 class="dream"><i>Travelling<br> It leaves you speechless<br> Then turns you into a<br> STORYTELLER!</i><br></h1><hr>
 <h2>EXPLORE</h2>
 <button class="accordion">OUR MISSION</button>
@@ -294,29 +296,25 @@ width:50%;
   <section class="slideshow">
     <div class="content">
       <div class="content-carrousel">
-        <figure class="shadow"><img src="bird2.jpg"></figure>
-          <figure class="shadow"><img src="bird3.jpg"></figure>
-        <figure class="shadow"><img src="bird1.jpg"></figure>
+        <figure class="shadow"><img src="../assets/bird2.jpg"></figure>
+          <figure class="shadow"><img src="../assets/bird3.jpg"></figure>
+        <figure class="shadow"><img src="../assets/bird1.jpg"></figure>
 
-        <figure class="shadow"><img src="bird2.jpg"></figure>
+        <figure class="shadow"><img src="../assets/bird2.jpg"></figure>
 
-        <figure class="shadow"><img src="bird3.jpg"></figure>
+        <figure class="shadow"><img src="../assets/bird3.jpg"></figure>
 
-        <figure class="shadow"><img src="bird1.jpg"></figure>
+        <figure class="shadow"><img src="../assets/bird1.jpg"></figure>
 
-        <figure class="shadow"><img src="bird3.jpg"></figure>
+        <figure class="shadow"><img src="../assets/bird3.jpg"></figure>
 
-        <figure class="shadow"><img src="bird2.jpg"></figure>
+        <figure class="shadow"><img src="../assets/bird2.jpg"></figure>
 
-        <figure class="shadow"><img src="bird1.jpg"></figure>
+        <figure class="shadow"><img src="../assets/bird1.jpg"></figure>
 
       </div>
     </div>
   </section>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
-<a href="activities.html"><img src="activity.png" alt="Tree" width="250" height="300" align="middle" hspace="75" border=5></a>
-  <a href="gallery.html" ><img src="places.jpg" alt="Hill" width="250" height="300" align="middle" hspace="75" border=5></a>
-    <img src="videos.jpg" alt="Maldive island" width="250" height="300" align="middle" hspace="75" border=5>
 
 
 

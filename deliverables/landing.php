@@ -1,6 +1,6 @@
 <?php 
 	session_start();
-	include 'DBConnector.php';
+	include '../php/DBConnector.php';
 
 	$db = new DBConnector();
 	$con = $db->DBconnect();
@@ -45,7 +45,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Destinations Landing Page</title>
-	<link rel="stylesheet" href="../loginstyles.css">
+	<!--<link rel="stylesheet" href="../loginstyles.css">-->
 
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -56,26 +56,24 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
-<body>
+<body style="background-image: url('../assets/bird1.jpg');">
 
-  <div class="container">
+  <div class="container" >
     
-    <h1 style="color:white; text-align: center;">Welcome to Destinations,Kenya</h1>
-    <?echo "$_SESSION['username']" ?>
+    <h1 style="color:black; text-align: center;">Welcome to Destinations,Kenya</h1>
   </div>
 
-    	<div class="login-box" style="height: 200px;"> <!--login box with an avatar head -->
+    	<div class="login-box" style="height: 200px; padding-left: 450px;"> <!--login box with an avatar head -->
 
-		      <img src="../assets/avatar.png" class="avatar">
   			     <form name="landingForm" id="landingForm" method="POST" action="<?=$_SERVER['PHP_SELF'] ?>">				
 
-			         <p>Username</p>
-			             <input type="text" name="username" placeholder="Username" autocomplete="off" required>
+			         <p>Username
+			             <input type="text" name="username" placeholder="Username" autocomplete="off" required></p>
 
-		            <p>Password</p>
-			                 <input type="password" name="password" placeholder="Enter password" autocomplete="off" required>
+		            <p>Password
+			                 <input type="password" name="password" placeholder="Enter password" autocomplete="off" required></p>
 
-		                   <input type="submit" name="btn-Login" value="Login">
+		                   <input type="submit" name="btn-Login" value="Login" class="btn btn-primary">
 
 		          </form>
 
