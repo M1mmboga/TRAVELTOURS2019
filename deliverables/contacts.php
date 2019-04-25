@@ -7,25 +7,9 @@ session_start();
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Contact us</title>
-	<link rel="stylesheet" href="destinationcss.css">
+	<link rel="stylesheet" href="../css/navbarStyles.css">
 	<style>
-	body
-	{
-	background-image: url("blar.jpg");
-	height: 100%;
- 	background-repeat: no-repeat;
- 	background-size: cover;
- 	padding: 0;
- 	margin: 0;
-	}
-	h1
-	{text-align: center;
-font-size: 30px;
-	}	
-	hr
-	{
-		width:20%;
-	}
+		
 	input[type=text], select, textarea {
     width: 100%;
     padding: 10px;
@@ -51,109 +35,32 @@ input[type=submit]:hover {
 }
 
 .mycontactform {
-    border-radius: 5px;
+    border-radius: 55px;
+    height: 500px;
+    width: 40%;
+    margin-right: 100px;
     background-color: #f2f2f2;
     padding: 20px;
 }
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
-.navbar a {
-    float: right;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 14px;
-    text-decoration: none;
-}
-
-.dropdown {
-    float: right;
-    overflow: hidden;
-}
-
-.dropdown .dropbtn {
-    cursor: pointer;
-    font-size: 16px;    
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-    background-color: gold;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-.show {
-    display: block;
-}
-#mainbody
+h1
 {
-  height: 100px;
-  margin: 0;
-  background-image: url("ocean.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  }
-h1,h2
-{
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
   color: black;
   text-decoration: none;
 }
 
-  .header
-{
-  font-family: lucia;
-  font-size: 30px;
-}
-	</style>
+</style>
 </head>
-<body>
-<div class="navbar">
-  <h1 style="float:left; color:white; text-align: top;
-    padding: 0;
-    text-decoration: none;display: block;
-">Destinations Kenya</h1>
-  <a href="contacts.php">Contact us</a>
-  <a href="allsites.php">Destinations in Kenya</a>
-  <a href="newhome.php">Home</a>
-  <a href="#"> Hello,  <?php echo $_SESSION['username']; ?></a>
+<body style="min-height: 100%;">
+<?php include '../php/navbar.php';?>
+<h1>Have Some Questions?</h1>
 
-</div>
-<h1>Contact Us</h1><hr>
+	<img src="../assets/inbox-logo.png" alt="Inbox Logo Image" height="350px" width="300px" >
 
-<div class="mycontactform">
+<div class="mycontactform" style="float: right;">
+
 	<form action="server/contacts.php" method="POST">
 		<label for="fname">First Name</label>
 		<input type="text" id="fname" name="firstname" placeholder="Enter your first name here..." required><br>
@@ -213,15 +120,18 @@ h1,h2
 			<option value="Vihiga">Vihiga County</option>
 			<option value="Wajir">Wajir County</option>
 			<option value="WestPokot">West Pokot County</option>
-			
-		</select><br>
+		</select>
+		<br>
 
 		<label for="inquiry">Inquiry</label>
 		<textarea id="inquiry" name="iinquiry" placeholder="Write your inquiry here..." style="height:100px" required></textarea><br>
 
-		<input type="submit" value="submit">
+		<input type="submit" value="Submit">
 	</form>
+
 </div>
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br>		
+		 <?php include '../php/footer.php'; ?> 
 </body>
 </html>

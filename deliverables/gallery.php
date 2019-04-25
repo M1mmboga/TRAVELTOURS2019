@@ -6,19 +6,13 @@ session_start();
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Gallery</title>
-	<link rel="stylesheet" href="destinationcss.css">
+	<link rel="stylesheet" href="../css/navbarStyles.css">
 <style>
 * {
     box-sizing: border-box;
 }
 
-body {
-  background-image: url("matt1.jpg");
-    background-color: #f1f1f1;
-    padding: 0px;
-    font-family: Arial;
-    margin: 0;
-}
+
 
 /* Center website */
 .main {
@@ -26,10 +20,7 @@ body {
     margin: auto;
 }
 
-h1 {
-    font-size: 50px;
-    word-break: break-all;
-}
+
 
 .row {
     margin: 10px -16px;
@@ -84,106 +75,11 @@ h1 {
   color: white;
 }
 
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.navbar a {
-    float: right;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 14px;
-    text-decoration: none;
-}
-
-.dropdown {
-    float: right;
-    overflow: hidden;
-}
-
-.dropdown .dropbtn {
-    cursor: pointer;
-    font-size: 16px;    
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-    background-color: gold;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
 
 .show {
     display: block;
 }
-#mainbody
-{
-  height: 100px;
-  margin: 0;
-  background-image: url("ocean.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  }
-h1,h2
-{
-  font-size: 40px;
-  text-align: center;
-  color: black;
-  text-decoration: none;
-}
 
-  .header
-{
-  font-family: lucia;
-  font-size: 30px;
-}
-.accordion {
-  position: center;
-    background-color: black;
-    color: white;
-    cursor: pointer;
-    padding: 18px;
-    border: none;
-    text-align: center;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-    margin: auto;
-    display: block;
-}
-
-.active, .accordion:hover {
-    background-color: red; 
-}
 
 .panel {
 
@@ -197,36 +93,16 @@ h1,h2
 <body>
 
 
-<div class="navbar">
-  <h1 style="float:left; color:white; text-align: top;
-    padding: 0;
-    text-decoration: none;display: block;
-">Destinations Kenya</h1>
-  <a href="contacts.php">Contact us</a>
-  <a href="#login">Login</a>
-  <a href="allsites.php">Destinations in Kenya</a>
-  <a href="newhome.php">Home</a>
-    <a href="#"> Hello,  <?php echo $_SESSION['username']; ?></a>
+<?php include '../php/navbar.php';?>
+  
 
-
-  <div class="dropdown">
-    <button class="dropbtn" onclick="myFunction()">Our Services
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content" id="myDropdown">
-      <a href="#">Activities to do</a>
-      <a href="#">Places to visit</a>
-      <a href="#">Bookings</a>
-    </div>
-  </div> 
-</div>
 <!-- MAIN (Center website) -->
 <div class="main">
 
-<h1>TRAVEL KENYA</h1>
+<h3 style="text-align: center;">Travel KENYA</h3>
 <hr>
 
-<h2>SOME BREATHTAKING SITES </h2>
+<h3 style="text-align: center;"> Breathtaking Gallery </h3>
 
 <div id="myBtnContainer">
   <button class="btn active" onclick="filterSelection('all')"> Show all</button>
@@ -241,21 +117,21 @@ h1,h2
 <div class="row">
   <div class="column nature">
     <div class="content">
-      <img src="beach1.jpg" alt="nature" style="width:100%">
+      <img src="../assets/beach1.jpg" alt="nature" style="width:100%">
       <h4>SANDY BEACHES </h4>
       <p>POSITIVE VIBEZ.</p>
     </div>
   </div>
   <div class="column nature">
     <div class="content">
-    <img src="msa2.jpg" alt="nature" style="width:100%">
+    <img src="../assets/msa2.jpg" alt="nature" style="width:100%">
       <h4>COOL AND HUMID</h4>
       <p>SPEAK THROUGH YOUR TRAVELS.</p>
     </div>
   </div>
   <div class="column nature">
     <div class="content">
-    <img src="mombasa.jpg" alt="nature" style="width:100%">
+    <img src="../assets/mombasa.jpg" alt="nature" style="width:100%">
       <h4>SAND SMITTEN</h4>
       <p>SHOW THE WORLD..</p>
     </div>
@@ -263,21 +139,21 @@ h1,h2
   <div class="row">
   <div class="column wildlife">
     <div class="content">
-      <img src="mara1.jpg" alt="wildlife" style="width:100%">
+      <img src="../assets/mara1.jpg" alt="wildlife" style="width:100%">
       <h4>Migrations </h4>
       <p>Maasai mara.</p>
     </div>
   </div>
   <div class="column wildlife">
     <div class="content">
-    <img src="wild1.jpg" alt="wildlife" style="width:100%">
+    <img src="../assets/wild1.jpg" alt="wildlife" style="width:100%">
       <h4>IN THE JUNGLE</h4>
       <p>Read through nature.</p>
     </div>
   </div>
   <div class="column wildlife">
     <div class="content">
-    <img src="wild3.jpg" alt="wildlife" style="width:100%">
+    <img src="../assets/wild3.jpg" alt="wildlife" style="width:100%">
       <h4>LIONS</h4>
       <p>WHO OWNS THE JUNGLE??.</p>
     </div>
@@ -285,21 +161,21 @@ h1,h2
   
   <div class="column Lakes">
     <div class="content">
-      <img src="bogoria1.jpg" alt="Lakes" style="width:100%">
+      <img src="../assets/bogoria1.jpg" alt="Lakes" style="width:100%">
       <h4>HOT SPRINGS</h4>
       <p>love on a real day..</p>
     </div>
   </div>
   <div class="column Lakes">
     <div class="content">
-    <img src="turkana1.jpg" alt="Lakes" style="width:100%">
+    <img src="../assets/turkana1.jpg" alt="Lakes" style="width:100%">
       <h4>TURKANA</h4>
       <p>Easen up..</p>
     </div>
   </div>
   <div class="column Lakes">
     <div class="content">
-    <img src="nakuru1.jpg" alt="Lakes" style="width:100%">
+    <img src="../assets/nakuru1.jpg" alt="Lakes" style="width:100%">
       <h4>Temperate </h4>
       <p>.Beauty redefined.</p>
     </div>
@@ -307,21 +183,21 @@ h1,h2
 
   <div class="column Mountains">
     <div class="content">
-      <img src="mount1.jpg" alt="Mountains" style="width:100%">
+      <img src="../assets/mount1.jpg" alt="Mountains" style="width:100%">
       <h4>Hiking </h4>
       <p>Reach the peaks .</p>
     </div>
   </div>
   <div class="column Mountains">
     <div class="content">
-    <img src="mount3.jpg" alt="Mountains" style="width:100%">
+    <img src="../assets/mount3.jpg" alt="Mountains" style="width:100%">
       <h4>Ice Age</h4>
       <p>Out of element.</p>
     </div>
   </div>
   <div class="column Mountains">
     <div class="content">
-    <img src="longot1.jpg" alt="Mountains" style="width:100%">
+    <img src="../assets/longot1.jpg" alt="Mountains" style="width:100%">
       <h4>Craters</h4>
       <p> Watch the world evolving .</p>
     </div>
@@ -377,6 +253,7 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 </script>
-	
+	    <?php include '../php/footer.php'; ?>
+
 </body>
 </html>

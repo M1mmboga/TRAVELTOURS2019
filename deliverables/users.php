@@ -97,5 +97,8 @@ if (isset($_POST['edit'])) {
 }
 
 ?>
+
+		 <?php include '../php/footer.php'; ?>
+
 </body>
 </html>

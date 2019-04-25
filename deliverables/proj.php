@@ -239,6 +239,7 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 </script>
+       <?php include '../php/footer.php'; ?>
 
 </body>
 </html>

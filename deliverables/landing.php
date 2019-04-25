@@ -56,11 +56,11 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
-<body style="background-image: url('../assets/bird1.jpg');">
+<body style="background-image: url('../assets/landing.jpg'); background-repeat: no-repeat; background-size: cover;">
 
   <div class="container" >
     
-    <h1 style="color:black; text-align: center;">Welcome to Destinations,Kenya</h1>
+    <h2 style="color:white; text-align: center;"><i>Welcome to Destinations Kenya</i></h2>
   </div>
 
     	<div class="login-box" style="height: 200px; padding-left: 450px;"> <!--login box with an avatar head -->
