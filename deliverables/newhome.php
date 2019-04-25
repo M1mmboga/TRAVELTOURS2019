@@ -129,7 +129,7 @@ width:50%;
   
 </style>
 </head>
-<body style="min-height: 100%;">
+<body>
 
             <?php include '../php/navbar.php'; ?>
    

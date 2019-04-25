@@ -61,15 +61,15 @@ h1
 
 <div class="mycontactform" style="float: right;">
 
-	<form action="server/contacts.php" method="POST">
+	<form action="../server/contacts.php" method="POST">
 		<label for="fname">First Name</label>
-		<input type="text" id="fname" name="firstname" placeholder="Enter your first name here..." required><br>
+		<input type="text" id="fname" name="firstname" placeholder="Enter your first name here..." required autocomplete="off"><br>
 
 		<label for="lname">Last Name</label>
-		<input type="text" id="lname" name="lastname" placeholder="Enter your last name here..." required><br>
+		<input type="text" id="lname" name="lastname" placeholder="Enter your last name here..." required autocomplete="off"><br>
 
 		<label for="email">Email</label>
-		<input type="text" id="email" name="eemail" placeholder="Enter your email here..." required><br>
+		<input type="text" id="email" name="eemail" placeholder="Enter your email here..." required autocomplete="off"><br>
 
 		<label for="county">County</label>
 		<select id="county" name="ccounty" placeholder="Enter your county here..." required>
@@ -124,7 +124,7 @@ h1
 		<br>
 
 		<label for="inquiry">Inquiry</label>
-		<textarea id="inquiry" name="iinquiry" placeholder="Write your inquiry here..." style="height:100px" required></textarea><br>
+		<textarea id="inquiry" name="iinquiry" placeholder="Write your inquiry here..." style="height:100px" required autocomplete="off"></textarea><br>
 
 		<input type="submit" value="Submit">
 	</form>
