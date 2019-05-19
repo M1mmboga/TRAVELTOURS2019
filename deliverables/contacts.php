@@ -8,6 +8,9 @@ session_start();
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Contact us</title>
 	<link rel="stylesheet" href="../css/navbarStyles.css">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+<script src="../js/bootstrap.bundle.min.js" type="text/javascript" charset="utf-8" async defer></script>
+
 	<style>
 		
 	input[type=text], select, textarea {
